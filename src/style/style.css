@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #f3f3f3;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #1b1b32;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#title{
+    color: #7777df;
+}
+
+#description{
+    color: #7777df;
+}
+
+p{
+    padding-left: 5px;
+}
+
+label{
+    display: block;
+    padding-left: 5px;
+    color: #7777df;
+}
+input{
+    display: inline-block;
+    width: 90%;
+    height: 2em;
+    border-radius: 10px;
+    background-color: #1a1a2e67;
+}
+
+input::placeholder{
+    color: #fff;
+    padding-left: 10px;
+}
+
+#survey-form{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.survey-form{
+    padding-top: 10px;
+    line-height: 1.5em;
+    width: 100%;
+}
+
+#dropdown{
+    width: 90%;
+    height: 2em;
+    border-radius: 10px;
+}
+
+.survey-text{
+    line-height: 0;
+    padding-left: 5px;
+}
+
+.radio-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.radio-form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    padding-left: 0;
+    line-height: 2.2;
+    gap: 10px;
+}
+
+.radio-form input{
+    width: 25px;
+    padding-right: 2em;
+}
+
+.checkbox-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.checkbox-form label{
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    gap: 10px;
+    margin-bottom: 1em;
+    width: 80%;
+    line-height: 2;
+}
+
+.checkbox-form input {
+    width: 25px;
+}
+
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}    
+
+#comments{
+    min-height: 120px;
+    width: 95%;
+    resize: vertical;
+}
+
+.submit-button{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#submit{
+    width: 96%;
+    height: 2em;
+    border-radius: 10px;
+    background-color: #6767bba9;
+}
+
+
